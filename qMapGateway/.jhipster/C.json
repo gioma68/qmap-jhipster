@@ -1,0 +1,16 @@
+{
+  "name": "C",
+  "fields": [],
+  "relationships": [],
+  "entityTableName": "c",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["qMapGateway", "qMapSonarQBImporter"],
+  "databaseType": "sql",
+  "changelogDate": "20210506104206"
+}
