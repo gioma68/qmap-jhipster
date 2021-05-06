@@ -1,0 +1,16 @@
+{
+  "name": "E",
+  "fields": [],
+  "relationships": [],
+  "entityTableName": "e",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["qMap", "juliaImporter"],
+  "databaseType": "sql",
+  "changelogDate": "20210506103704"
+}
