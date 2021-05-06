@@ -46,9 +46,6 @@ public class CacheConfiguration {
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
-            createCache(cm, it.expleo.qmap.importer.silk.domain.A.class.getName());
-            createCache(cm, it.expleo.qmap.importer.silk.domain.A.class.getName() + ".bs");
-            createCache(cm, it.expleo.qmap.importer.silk.domain.B.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

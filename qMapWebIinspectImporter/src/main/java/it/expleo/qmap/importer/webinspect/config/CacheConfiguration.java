@@ -46,7 +46,6 @@ public class CacheConfiguration {
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
-            createCache(cm, it.expleo.qmap.importer.webinspect.domain.D.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
