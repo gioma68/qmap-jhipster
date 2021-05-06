@@ -1,0 +1,70 @@
+
+application {
+  config {
+    baseName qMapGateway,
+    applicationType gateway,
+    packageName it.expleo.qmap.gateway,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework react
+  }
+  entities *
+}
+
+application {
+  config {
+    baseName qMapSilkImporter,
+    applicationType microservice,
+    packageName it.expleo.qmap.importer.silk,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities A, B
+}
+
+application {
+  config {
+    baseName qMapWebIinspectImporter,
+    applicationType microservice,
+    packageName it.expleo.qmap.importer.webinspect,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities D
+}
+application {
+  config {
+    baseName qMapSonarQBImporter,
+    applicationType microservice,
+    packageName it.expleo.qmap.importer.sonarqb,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities C
+}
+
+application {
+  config {
+    baseName qMapJuliaSoftImporter,
+    applicationType microservice,
+    packageName it.expleo.qmap.importer.julia,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities E
+}
+
+entity A {}
+
+entity B {}
+
+entity C {}
+
+entity D {}
+
+entity E {}
+
+relationship OneToMany {
+  A to B
+}
+    
